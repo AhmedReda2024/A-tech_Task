@@ -1,0 +1,78 @@
+<div
+  class="relative bg-white rounded-md overflow-x-auto border-[1px] p-3 border-[#ecf0f5]"
+>
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+    <thead class="text-xs rounded-md text-[#6b7280] uppercase bg-[#f4f5f7]">
+      <tr>
+        <th scope="col" class="px-6 py-3">{{ "table.client" | translate }}</th>
+        <th scope="col" class="px-6 py-3">
+          {{ "table.date_of_appointment" | translate }}
+        </th>
+        <th scope="col" class="px-6 py-3">
+          {{ "table.cancellation_date" | translate }}
+        </th>
+        <th scope="col" class="px-6 py-3">
+          {{ "table.appointment_officer" | translate }}
+        </th>
+        <th scope="col" class="px-6 py-3">
+          {{ "table.local_minutes" | translate }}
+        </th>
+        <th scope="col" class="px-6 py-3">
+          {{ "table.international_minutes" | translate }}
+        </th>
+        <th scope="col" class="px-6 py-3">{{ "table.amount" | translate }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (row of tableData.slice(startItemIndex, endItemIndex); track $index)
+      {
+
+      <tr
+        class="bg-white border-[0.75px] border-[#0000001A] rounded-lg mt-3 mb-3"
+      >
+        <th
+          scope="row"
+          class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap relative group"
+        >
+          {{ row.client | translate }}
+
+          <!-- Tooltip Element -->
+          <div
+            id="tooltip-hover"
+            role="tooltip"
+            class="absolute z-10 invisible opacity-0 transition-opacity duration-300 ease-in-out group-hover:visible group-hover:opacity-100 bg-gray-900 text-white text-sm font-medium rounded-lg px-3 py-2 shadow-md top-full left-1/2 transform -translate-x-1/2 mt-2 dark:bg-gray-700"
+          >
+            {{ "table.german_extermination_company_for_insects" | translate }}
+
+            <!-- Tooltip Arrow -->
+            <div
+              class="absolute w-3 h-3 bg-gray-900 rotate-45 left-1/2 -translate-x-1/2 -top-1"
+            ></div>
+          </div>
+        </th>
+
+        <td class="px-6 py-4">{{ row.appointmentDate | translate }}</td>
+        <td class="px-6 py-4">{{ row.cancellationDate | translate }}</td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          {{ row.appointmentOfficer | translate }}
+        </td>
+        <td class="px-6 py-4">{{ row.localMinutes }}</td>
+        <td class="px-6 py-4">{{ row.internationalMinutes }}</td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          {{ row.amount }} {{ "table.currency" | translate }}
+        </td>
+      </tr>
+
+      }
+    </tbody>
+  </table>
+
+  <!-- Pagination Component -->
+  <app-pagination
+    [totalItems]="totalItems"
+    [currentPage]="currentPage"
+    [itemsPerPage]="itemsPerPage"
+    (pageChanged)="onPageChanged($event)"
+  >
+  </app-pagination>
+</div>

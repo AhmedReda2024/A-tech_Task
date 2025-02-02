@@ -1,0 +1,28 @@
+/* .line-border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 28px;
+  background-color: #dfdfdf;
+  transform: translateY(-50%);
+}
+
+.block .line-border {
+  display: block;
+}
+
+.no-border .line-border {
+  display: none; 
+} */
+.line-border::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2px;
+  height: 28px;
+  background-color: #dfdfdf;
+  transform: translateY(-50%);
+}

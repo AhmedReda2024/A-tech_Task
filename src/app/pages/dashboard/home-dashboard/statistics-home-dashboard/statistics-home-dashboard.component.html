@@ -1,0 +1,186 @@
+<div class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.protocol_name" | translate }}
+    </h5>
+    <p class="font-normal text-[14px] text-[#1c1c28]">
+      {{ "header." + numberDetails().protocol | translate }}
+    </p>
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:block': translateService.currentLang == 'en',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.country" | translate }}
+    </h5>
+
+    <div
+      class="flex flex-row items-center xs:flex-col sm:flex-row gap-[6px] justify-center text-gray-500 text-sm mt-3 sm:mt-0"
+    >
+      <img
+        src="/images/country-logo.png"
+        alt="User Avatar"
+        class="w-5 h-5 rounded-full ms-2"
+      />
+
+      <p class="font-normal text-[14px] text-[#1c1c28]">
+        {{ "header." + numberDetails().country | translate }}
+      </p>
+    </div>
+
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:hidden': translateService.currentLang == 'en',
+      'md:block': translateService.currentLang == 'ar',
+
+      'lg:block': translateService.currentLang == 'en',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.current_client" | translate }}
+    </h5>
+
+    <div
+      class="flex flex-row items-center gap-[6px] justify-center xs:flex-col sm:flex-row text-gray-500 text-sm mt-3 sm:mt-0"
+    >
+      <img
+        src="/images/company-logo.jpeg"
+        alt="User Avatar"
+        class="w-5 h-5 rounded-full ms-2"
+      />
+
+      <div class="font-normal text-[14px] text-[#1c1c28] relative group">
+        {{ "header." + numberDetails().name | translate }}
+
+        <!-- Tooltip Element -->
+        <div
+          id="tooltip-hover"
+          role="tooltip"
+          class="absolute w-full z-10 invisible opacity-0 transition-opacity duration-300 ease-in-out group-hover:visible group-hover:opacity-100 bg-gray-900 px-3 py-2 text-white text-sm font-medium rounded-lg shadow-md top-full left-1/2 transform -translate-x-1/2 mt-2"
+        >
+          {{ "header.german_extermination_company_for_insects" | translate }}
+
+          <!-- Tooltip Arrow -->
+          <div
+            class="absolute w-3 h-3 bg-gray-900 rotate-45 left-1/2 -translate-x-1/2 -top-1"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:block': translateService.currentLang == 'en',
+      'lg:hidden': translateService.currentLang == 'en',
+      'lg:block': translateService.currentLang == 'ar',
+      'xl:block': translateService.currentLang == 'en',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.number_of_extensions" | translate }}
+    </h5>
+    <p class="font-normal text-[14px] text-[#1c1c28]">
+      {{ numberDetails().extensions }}
+    </p>
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:hidden': translateService.currentLang == 'en',
+      'md:block': translateService.currentLang == 'ar',
+      'lg:block': translateService.currentLang == 'en',
+      'lg:hidden': translateService.currentLang == 'ar',
+      'xl:hidden': translateService.currentLang == 'en',
+      'xl:block': translateService.currentLang == 'ar',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.last_shipment_date" | translate }}
+    </h5>
+    <p class="font-normal text-[14px] text-[#1c1c28]">
+      {{ "header." + numberDetails().lastShipment | translate }}
+    </p>
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:block': translateService.currentLang == 'en',
+      'lg:block': translateService.currentLang == 'ar',
+      'xl:hidden': translateService.currentLang == 'ar',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.current_balance" | translate }}
+    </h5>
+    <p class="font-normal text-[14px] text-[#1c1c28]">
+      {{ "header." + numberDetails().currentBalance | translate }}
+    </p>
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:hidden': translateService.currentLang == 'en',
+      'md:block': translateService.currentLang == 'ar',
+
+      'lg:hidden': translateService.currentLang == 'en',
+      'xl:block': translateService.currentLang == 'en',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 text-[14px] text-[#6B7280]">
+      {{ "header.current_customer's_used_balance" | translate }}
+    </h5>
+    <p class="font-normal text-[14px] text-[#1c1c28]">
+      {{ "header." + numberDetails().currentBalance | translate }}
+    </p>
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:block': translateService.currentLang == 'en',
+      'xl:block': translateService.currentLang == 'ar',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+
+  <div class="block text-center p-6 relative">
+    <h5 class="mb-2 lg:whitespace-nowrap text-[14px] text-[#6B7280]">
+      {{ "header.the_balance_used_for_the_number_as_a_whole" | translate }}
+    </h5>
+    <p class="font-normal text-[14px] text-[#1c1c28]">
+      {{ "header." + numberDetails().balanceUsed | translate }}
+    </p>
+    <span
+      [class]="{
+      'xs:hidden': translateService.currentLang == 'en' || translateService.currentLang == 'ar',
+      'md:hidden': translateService.currentLang == 'en',
+      'md:block': translateService.currentLang == 'ar',
+
+      'lg:hidden': translateService.currentLang == 'en',
+    }"
+      class="line-border"
+    ></span>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+{
+  "main": {
+    "show_number": "عرض الرقم"
+  },
+  "header": {
+    "in_use": "قيد الإستخدام",
+    "number_of_extensions": "عدد الإمتدادات",
+    "current_client": "العميل الحالي",
+    "country": "الدولة",
+    "protocol_name": "اسم البروتوكول",
+    "german_extermination_company...": "الشركة الألمانية للإبادة...",
+    "hashemite_kingdom_of_jordan": "المملكة الأردنية الهاشمية",
+    "vodafone_egypt": "فودافون مصر",
+    "the_balance_used_for_the_number_as_a_whole": "الرصيد المستخدم للرقم ككل",
+    "5000 EGP": "5000 ج.م",
+    "current_customer's_used_balance": "الرصيد المستخدم للعميل الحالي",
+    "current_balance": "الرصيد الحالي",
+    "last_shipment_date": "تاريخ آخر شحنة",
+    "lang": "ع",
+    "edit_number": "تعديل الرقم",
+    "cancel_appointment": "إلغاء التعيين",
+    "german_extermination_company_for_insects": "الشركة الألمانية للإبادة الحشرات",
+    "29/12/2024": "2024/12/29"
+  },
+  "table": {
+    "client": "العميل",
+    "date_of_appointment": "تاريخ التعيين",
+    "cancellation_date": "تاريخ إلغاء التعيين",
+    "appointment_officer": "المسؤول عن التعيين",
+    "abdul_rahim_ismail_nasef": "عبدالرحيم إسماعيل ناصف",
+    "local_minutes": "الدقائق المحلية",
+    "international_minutes": "الدقائق الدولية",
+    "amount": "المبلغ",
+    "german_extermination_company": "الشركة الألمانية للإبادة...",
+    "1/12/2024": "1/12/2024",
+    "currency": "ج.م",
+    "german_extermination_company_for_insects": "الشركة الألمانية للإبادة الحشرات"
+  },
+  "footer": {
+    "date_of_creation": "تاريخ الإنشاء",
+    "04:30 PM": "04:30 م",
+    "created_by": "تم الأإنشاء بواسطة",
+    "abdul_rahim_ismail_nasef": "عبدالرحيم إسماعيل ناصف"
+  },
+  "pagination": {
+    "showing": "عرض",
+    "of": "من أصل"
+  }
+}

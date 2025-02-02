@@ -1,0 +1,122 @@
+<div class="flex flex-col sm:flex-row justify-between items-center w-full p-4">
+  <div class="flex items-center flex-row xs:flex-col sm:flex-row gap-3">
+    <p class="header-text text-sm sm:text-base">012345678910</p>
+    <button
+      class="header-btn py-[6px] px-4 rounded text-white text-sm sm:text-base"
+    >
+      {{ "header.in_use" | translate }}
+    </button>
+  </div>
+
+  <div
+    class="flex items-center flex-row xs:flex-col-reverse sm:flex-row mt-3 sm:mt-0"
+  >
+    <!-- Language Dropdown -->
+    <div class="relative ml-3">
+      <button
+        (click)="toggleDropDown()"
+        class="text-white header-btn font-medium rounded-lg text-sm px-5 py-2.5 text-center flex items-center"
+      >
+        {{ "header.lang" | translate }}
+        <svg
+          class="w-4 h-4 ms-3"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 6"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1l4 4 4-4"
+          />
+        </svg>
+      </button>
+
+      <!-- Dropdown menu -->
+      @if (isDropdownOpen) {
+      <div
+        class="absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 mt-2"
+      >
+        <ul class="py-2 text-sm text-gray-700">
+          <li
+            [class.bg-gray-100]="translateService.currentLang == 'en'"
+            (click)="changeLanguage('en'); toggleDropDown()"
+          >
+            <a class="block cursor-pointer px-4 py-2 hover:bg-gray-100">EN</a>
+          </li>
+          <li
+            [class.bg-gray-100]="translateService.currentLang == 'ar'"
+            (click)="changeLanguage('ar'); toggleDropDown()"
+          >
+            <a class="block cursor-pointer px-4 py-2 hover:bg-gray-100">AR</a>
+          </li>
+        </ul>
+      </div>
+      }
+    </div>
+
+    <div>
+      <button
+        id="dropdownMenuIconHorizontalButton"
+        data-dropdown-toggle="dropdownDotsHorizontal"
+        class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900"
+        type="button"
+      >
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 16 3"
+        >
+          <path
+            d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"
+          />
+        </svg>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div
+        id="dropdownDotsHorizontal"
+        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44"
+      >
+        <ul
+          class="py-2 text-sm text-gray-700"
+          aria-labelledby="dropdownMenuIconHorizontalButton"
+        >
+          <li>
+            <a
+              class="flex items-center cursor-pointer text-[#1C1C28] gap-1 px-4 py-2 hover:bg-gray-100"
+            >
+              {{ "header.edit_number" | translate }}
+              <svg
+                class="text-[#6B7280]"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#5f6368"
+              >
+                <path
+                  d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="flex items-center cursor-pointer text-[#ff4b55] whitespace-nowrap gap-1 px-4 py-2 hover:bg-gray-100"
+            >
+              {{ "header.cancel_appointment" | translate }}
+              <i class="fa-solid fa-link-slash"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

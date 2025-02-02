@@ -1,0 +1,50 @@
+{
+  "main": {
+    "show_number": "Show Number"
+  },
+  "header": {
+    "in_use": "In Use",
+    "number_of_extensions": "Number of extensions",
+    "current_client": "Current Client",
+    "country": "Country",
+    "protocol_name": "Protocol name",
+    "german_extermination_company...": "German extermination company...",
+    "hashemite_kingdom_of_jordan": "Hashemite Kingdom of Jordan",
+    "vodafone_egypt": "Vodafone Egypt",
+    "the_balance_used_for_the_number_as_a_whole": "The balance used for the number as a whole",
+    "5000 EGP": "5000 EGP",
+    "current_customer's_used_balance": "Current customer's used balance",
+    "current_balance": "Current Balance",
+    "last_shipment_date": "Last shipment date",
+    "29/12/2024": "29/12/2024",
+    "lang": "Lang",
+    "edit_number": "Edit number",
+    "cancel_appointment": "Cancel appointment",
+    "german_extermination_company_for_insects": "German Extermination Company For Insects"
+  },
+  "table": {
+    "client": "Client",
+    "date_of_appointment": "Date of Appointment",
+    "cancellation_date": "Cancellation Date",
+    "appointment_officer": "Appointment Officer",
+    "abdul_rahim_ismail_nasef": "Abdul Rahim Ismail Nasef",
+    "local_minutes": "Local Minutes",
+    "international_minutes": "International Minutes",
+    "amount": "Amount",
+    "german_extermination_company": "German Extermination Company...",
+    "currency": "EGP",
+    "german_extermination_company_for_insects": "German Extermination Company For Insects"
+  },
+  "footer": {
+    "date_of_creation": "Date of creation",
+    "1/12/2024": "1/12/2024",
+    "04:30 PM": "04:30 PM",
+    "created_by": "Created by",
+    "abdul_rahim_ismail_nasef": "Abdul Rahim Ismail Nasef"
+  },
+
+  "pagination": {
+    "showing": "Showing",
+    "of": "of"
+  }
+}

@@ -1,0 +1,9 @@
+.footer-border {
+  width: 1px;
+  height: 28px;
+  background-color: #dfdfdf;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,22 @@
+<div class="bg-white rounded-md border-[1px] p-3 border-[#ecf0f5]">
+  <app-header-home-dashboard></app-header-home-dashboard>
+
+  <app-statistics-home-dashboard
+    [numberDetails]="customerDataService.numberDetails"
+  ></app-statistics-home-dashboard>
+</div>
+
+<app-table-home-dashboard
+  [tableData]="currentTableData"
+  [totalItems]="totalItems"
+  [currentPage]="currentPage"
+  [itemsPerPage]="itemsPerPage"
+  (pageChanged)="onPageChanged($event)"
+>
+</app-table-home-dashboard>
+
+<app-footer
+  [creationDate]="customerDataService.creationDate"
+  [creationTime]="customerDataService.creationTime"
+  [creator]="customerDataService.creator"
+></app-footer>

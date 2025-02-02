@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NeoSansArabic";
+  src: url("/fonts/alfont_com_NeoSansArabic.ttf") format("truetype"),
+    url("/fonts/alfont_com_NeoSansArabic.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeoSansArabic";
+  src: url("/public/fonts/alfont_com_AlFont_com_Neo-Sans-W23-b.ttf")
+      format("truetype"),
+    url("/public/fonts/alfont_com_AlFont_com_Neo-Sans-W23-b.ttf")
+      format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
